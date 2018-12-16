@@ -16,4 +16,15 @@ public class CompressionStringTest {
         String expected = "a2b1c5a3";
         assertEquals(expected, result);
     }
+
+    @Test
+    public void thenWordIsConsist2CharPrintThisWord() {
+
+        CompressionString compressionString = new CompressionString();
+        String inputWord = "al";
+        String result = compressionString.compressString(inputWord);
+        String expected = "al";
+        assertEquals(expected, result);
+    }
+
 }
