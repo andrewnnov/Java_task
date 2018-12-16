@@ -2,7 +2,7 @@ package ru.bannikov.week10_16des;
 
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 public class OnePermutationOfOtherTest {
 
@@ -11,7 +11,7 @@ public class OnePermutationOfOtherTest {
 
         OnePermutationOfOther newWord = new OnePermutationOfOther();
 
-        assertEquals(true, newWord.decidePermutationOfStrings("ag", "ag"));
+        assertTrue(newWord.decidePermutationOfStrings("ag", "ag"));
     }
 
     @Test
@@ -19,7 +19,7 @@ public class OnePermutationOfOtherTest {
 
         OnePermutationOfOther newWord = new OnePermutationOfOther();
 
-        assertEquals(false, newWord.decidePermutationOfStrings("ag", "ak"));
+        assertFalse(newWord.decidePermutationOfStrings("ag", "ak"));
     }
 
     @Test
@@ -27,7 +27,7 @@ public class OnePermutationOfOtherTest {
 
         OnePermutationOfOther newWord = new OnePermutationOfOther();
 
-        assertEquals(false, newWord.decidePermutationOfStrings("yandex", "ak"));
+        assertFalse(newWord.decidePermutationOfStrings("yandex", "ak"));
     }
 
 
@@ -36,7 +36,7 @@ public class OnePermutationOfOtherTest {
 
         OnePermutationOfOther newWord = new OnePermutationOfOther();
 
-        assertEquals(false, newWord.decidePermutationOfStrings("aaaa", "aaaa"));
+        assertFalse(newWord.decidePermutationOfStrings("aaaa", "aaaa"));
     }
 
 
