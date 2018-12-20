@@ -57,7 +57,7 @@ public class SelectSortTest {
         long finishTime = System.currentTimeMillis();
 
         System.out.println("Время выполнения алгоритма: " + (finishTime - startTime));
-        System.out.println("Количество итераций: " + SelectSort.count);
+        System.out.println("Количество итераций: " + SelectSort.countSelectSort);
 
     }
 
