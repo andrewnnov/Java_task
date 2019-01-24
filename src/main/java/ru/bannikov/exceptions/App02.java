@@ -1,9 +1,8 @@
 package ru.bannikov.exceptions;
 
 /*
-
+examples of exceptions
  */
-
 public class App02 {
 
     public static void main(String[] args) {
@@ -19,14 +18,12 @@ public class App02 {
     }
 
     private static void g() {
-
         System.err.println("    >2");
         h();
         System.err.println("    <2");
     }
 
     private static void h() {
-
         throw new RuntimeException();
     }
 }

@@ -7,10 +7,8 @@ import java.util.Arrays;
 import static org.junit.Assert.assertEquals;
 
 public class SelectSortTest {
-
     @Test
     public void whenArrayIsUnsortedThenArrayBecomeSorted() {
-
         SelectSort selectSort = new SelectSort();
         int[] unsorted = {2, 10, 1, 5, 4, 7};
         System.out.println(Arrays.toString(unsorted));
@@ -21,14 +19,11 @@ public class SelectSortTest {
         assertEquals(5, (selectSort.selectionSorting(unsorted))[3]);
         assertEquals(7, (selectSort.selectionSorting(unsorted))[4]);
         assertEquals(10, (selectSort.selectionSorting(unsorted))[5]);
-
         System.out.println(Arrays.toString(sortArray));
     }
 
-
     @Test
     public void whenArrayIsUnsortedAndHasSimilarElementThenArrayBecomeSorted() {
-
         SelectSort selectSort = new SelectSort();
         int[] unsorted = {2, 10, 1, 5, 5, 2};
         System.out.println(Arrays.toString(unsorted));
@@ -44,25 +39,15 @@ public class SelectSortTest {
 
     @Test
     public void defineSpeedOfAlgorithm() {
-
         SelectSort selectSort = new SelectSort();
-        int[] array = new int[1_000];
-
-        for (int i = 0; i < 1_000 ; i++) {
-            array[i] = (int) (Math.random()* 300);
+        int[] array = new int[10_000];
+        for (int i = 0; i < 10_000 ; i++) {
+            array[i] = (int) (Math.random()* 500);
         }
-
         long startTime = System.currentTimeMillis();
         selectSort.selectionSorting(array);
         long finishTime = System.currentTimeMillis();
-
         System.out.println("Время выполнения алгоритма: " + (finishTime - startTime));
         System.out.println("Количество итераций: " + SelectSort.countSelectSort);
-
     }
-
-
-
-
-
 }

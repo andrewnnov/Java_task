@@ -3,12 +3,9 @@ package ru.bannikov.algorithm;
 public class MyQuickSort {
 
     public static int countQuickSort = 0;
-
-
     public int[] quickSort(int[] array, int low, int high) {
 
         countQuickSort++;
-
         if(array.length == 0) {
             return array;
         }
@@ -22,7 +19,6 @@ public class MyQuickSort {
         int pivot = array[middle];
 
         //делим на подмассивы, который больше и меньше опорного элемента
-
         int i = low;
         int j = high;
 

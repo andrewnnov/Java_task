@@ -1,4 +1,4 @@
-package ru.bannikov.oop.lecture1.staticandnotstatic;
+package ru.bannikov.oop_golovach.lecture1.staticandnotstatic;
 
 public class ParentMessage {
 

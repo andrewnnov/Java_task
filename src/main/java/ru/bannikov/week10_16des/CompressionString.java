@@ -1,6 +1,4 @@
 package ru.bannikov.week10_16des;
-
-
 /*
 Implement a method to perform basic string compression using the counts of repeat characters.
 For example, the string aabcccccaaa would become a2b1c5a3. If compressed string would not become smaller than
@@ -34,7 +32,6 @@ public class CompressionString {
                 lastChar = word.charAt(i);
                 charCount = 1;
             }
-
         }
 
         result += Character.toString(lastChar) + Integer.toString(charCount);

@@ -1,4 +1,4 @@
-package ru.bannikov.oop.lecture1;
+package ru.bannikov.oop_golovach.lecture1.examples;
 
 import java.util.Arrays;
 import java.util.List;

@@ -7,11 +7,9 @@ break
 return
 throw
  */
-
 public class App00 {
 
     public static void main(String[] args) {
-
         for (int i = 0; i < 2 ; i++) {
             f();
             System.err.println();
@@ -30,6 +28,4 @@ public class App00 {
         }
         System.err.print(2);
     }
-
-
 }

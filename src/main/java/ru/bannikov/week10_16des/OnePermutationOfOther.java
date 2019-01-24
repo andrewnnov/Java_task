@@ -5,9 +5,7 @@ import java.util.stream.IntStream;
 public class OnePermutationOfOther {
 
     public boolean decidePermutationOfStrings(String firstString, String secondString) {
-
         int count = 0;
-
         int firstStringLength = firstString.length();
         int secondStringLength = secondString.length();
 
@@ -22,7 +20,6 @@ public class OnePermutationOfOther {
                     }
                 }
             }
-
             return (count == firstStringLength ? true : false);
 
         } else {

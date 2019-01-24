@@ -1,4 +1,4 @@
-package ru.bannikov.exceptions.test;
+package ru.bannikov.learn.test;
 
 public class B {
 

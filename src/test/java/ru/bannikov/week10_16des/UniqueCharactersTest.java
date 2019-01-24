@@ -8,18 +8,13 @@ public class UniqueCharactersTest {
 
     @Test
     public void whenCharactersHasUniqueThenTrue() {
-
         UniqueCharacters newWord = new UniqueCharacters();
-
         assertEquals(true, newWord.determineUniqueCharacters("age"));
     }
 
     @Test
     public void whenCharactersHasNotUniqueThenTrue() {
-
         UniqueCharacters newWord = new UniqueCharacters();
-
         assertEquals(false, newWord.determineUniqueCharacters("hello"));
     }
-
 }

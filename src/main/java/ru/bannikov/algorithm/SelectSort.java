@@ -2,13 +2,11 @@ package ru.bannikov.algorithm;
 
 public class SelectSort {
 
-    public static int countSelectSort;
+    public static int countSelectSort; //var for the perform test
 
     public int[] selectionSorting(int [] unSortArray) {
-        
         int min;
         int tmp;
-
         for (int border = 0; border < unSortArray.length - 1; border++) {
 
             min = border;
@@ -20,13 +18,8 @@ public class SelectSort {
                     unSortArray[index] = unSortArray[border];
                     unSortArray[border]=tmp;
                 }
-                
             }
-            
         }
         return unSortArray;
-
     }
-
-
 }
