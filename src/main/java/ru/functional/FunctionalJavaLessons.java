@@ -8,10 +8,6 @@ import java.util.stream.Stream;
 public class FunctionalJavaLessons {
 
     public static void main(String[] args) {
-
-//        Predicate<Integer> predicate = x -> x > 5;
-//        System.out.println(predicate.test(3));
-
         List<String> list = new ArrayList<>();
         list.add("one");
         list.add("two");
